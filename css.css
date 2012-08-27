@@ -224,7 +224,7 @@ img#talk_bubble {
 	color: black;
 }
 
-#announcements:before {
+#announcements:before, #announcements > before {
 	z-index: -1;
 	position: absolute;
 	top: -2px;
