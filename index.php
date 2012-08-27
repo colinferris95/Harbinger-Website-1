@@ -16,6 +16,7 @@
 	<script src="js/jquery-1.8.0.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.news_stories.js"></script>
+	<script src="js/jquery.beforeAfter.min.js"></script>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
 	
@@ -28,7 +29,12 @@
 				'openEffect' : 'fade',
 			});
 		});
-
+		
+		$(function() {
+			$(document)
+				.beforeAfter();
+		});
+		
 	</script>
 	
 	<?php
