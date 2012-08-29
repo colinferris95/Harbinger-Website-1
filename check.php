@@ -12,13 +12,16 @@
 	$myusername=$_POST['username'];
 	$mypassword=$_POST['password'];
 	
-	$myusername= stripslashes($myusername);
-	$mypassword= stripslashes($mypassword);
+	echo "Your Username is $myusername";
+	echo "Your Password is $mypassword";
 	
-	$myusername= mysql_real_escape_string($myusername);
-	$mypassword= mysql_real_escape_string($mypassword);
+	//$myusername= stripslashes($myusername);
+	//$mypassword= stripslashes($mypassword);
 	
-	$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
+	//$myusername= mysql_real_escape_string($myusername);
+	//$mypassword= mysql_real_escape_string($mypassword);
+	
+	$sql="SELECT * FROM $tbl_name WHERE username='$myusername'";
 	$result=mysql_query($sql);
 	
 	$count=mysql_num_rows($result);
