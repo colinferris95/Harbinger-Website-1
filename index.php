@@ -34,9 +34,6 @@ session_start();
 	
 	<script type="text/javascript">
 	
-		// Disable jquery mobile loading message
-		$.mobile.loadingMessage = false;
-	
 		// Fancybox
 		$(function() {
 			$('.fancy').fancybox({
@@ -182,7 +179,18 @@ session_start();
 			</div><!-- end "row" -->
 			
 			<div>
-				<?php echo "Username is " . $_SESSION['myusername']; ?>
+				<?php echo "Username is " . $_SESSION['myusername']; ?> <a href="logout.php"><button class="btn">Logout!</button></a>
+				<?php 
+					if(!isset($_SESSION['myusername'])) {
+						echo "<form method=\"POST\" action=\"check.php\" class=\"navbar-form pull-right\">
+								<input type=\"text\" name=\"username\" class=\"span2\" placeholder=\"Username\">
+								<input type=\"password\" name=\"password\" class=\"span2\" placeholder=\"Password\">
+								<button type=\"submit\" class=\"btn\">Login</button>
+							</form>";
+					} else {
+						print "goodbye";
+					}
+				?>
 			</div>
 			
 		</div><!-- end "container" -->

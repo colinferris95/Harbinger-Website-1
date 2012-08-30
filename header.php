@@ -13,7 +13,17 @@
 					<li id="nav_sports"><a href="/~alex/Harbinger2/sports/">Sports</a></li>
 					<li id="nav_clubs"><a href="/~alex/Harbinger2/clubs">Clubs</a></li>
 				</ul>
-				<div class="pull-right"></div>
+				<?php 
+					if(!isset($_SESSION['myusername'])) {
+						echo "<form method=\"POST\" action=\"check.php\" class=\"navbar-form pull-right\">
+								<input type=\"text\" name=\"username\" class=\"span2\" placeholder=\"Username\">
+								<input type=\"password\" name=\"password\" class=\"span2\" placeholder=\"Password\">
+								<button type=\"submit\" class=\"btn\">Login</button>
+							</form>";
+					} else {
+						print "goodbye";
+					}
+				?>
 			</div>
 		</div>
 	</div>
