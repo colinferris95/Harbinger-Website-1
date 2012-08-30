@@ -69,7 +69,7 @@ session_start();
 	
 	<div id="content">
 		
-		<!--#include virtual="/~alex/Harbinger2/header.shtml"-->
+		<!--#include virtual="/~alex/Harbinger2/header.php"-->
 				
 		<div id="news">
 			
