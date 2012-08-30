@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -174,6 +180,10 @@
 		
 				
 			</div><!-- end "row" -->
+			
+			<div>
+				<?php echo "Username is " . $_SESSION['myusername']; ?>
+			</div>
 			
 		</div><!-- end "container" -->
 		
