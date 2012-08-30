@@ -12,6 +12,15 @@
 					<li id="nav_home" class="active"><a href="/~alex/Harbinger2/">Home</a></li>
 					<li id="nav_sports"><a href="/~alex/Harbinger2/sports/">Sports</a></li>
 					<li id="nav_clubs"><a href="/~alex/Harbinger2/clubs">Clubs</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" date-toggle="dropdown">
+							<?php echo $_SESSION['myusername']; ?>
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li>Sign Out</li>
+						</ul>
+					</li>
 				</ul>
 				<?php 
 					if(!isset($_SESSION['myusername'])) {
@@ -21,7 +30,7 @@
 								<button type=\"submit\" class=\"btn\">Login</button>
 							</form>";
 					} else {
-						print "goodbye";
+						print "hello";
 					}
 				?>
 			</div>
