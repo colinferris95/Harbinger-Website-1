@@ -4021,6 +4021,7 @@ input[type="submit"].btn.btn-mini {
   color: #555555;
 }
 
+/* Change Navbar Colors */
 .navbar-inner {
   min-height: 40px;
   padding-right: 20px;
@@ -4253,7 +4254,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4372,8 +4373,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,

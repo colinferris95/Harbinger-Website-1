@@ -73,8 +73,10 @@ session_start();
 				
 		<div id="news">
 			
-			<div class="row">
-				<div class="span10 offset2" id="news_title_row"><h2 id="news_title">Harborfields News</h2></div>
+			<div class="container">
+				<div class="row">
+					<div class="span11 offset1" id="news_title_row"><h2 id="news_title">Harborfields News</h2></div>
+				</div>
 			</div>
 				
 			<div id="container_box">
@@ -177,10 +179,6 @@ session_start();
 		
 				
 			</div><!-- end "row" -->
-			
-			<div>
-				<?php echo "Username is " . $_SESSION['myusername']; ?> <a href="logout.php"><button class="btn">Logout!</button></a>
-			</div>
 			
 		</div><!-- end "container" -->
 		
