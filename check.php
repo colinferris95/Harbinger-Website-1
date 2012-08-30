@@ -9,17 +9,14 @@
 	mysql_connect("$host", "$username", "$password")or die("cannot connect");
 	mysql_select_db("$db_name")or die("cannot select DB");
 	
-	$myusername=$_POST['username'];
-	$mypassword=$_POST['password'];
+	$myusername = $_REQUEST["username"];
+	$mypassword = $_REQUEST["password"];
 	
-	echo "Your Username is $myusername";
-	echo "Your Password is $mypassword";
+	$myusername= stripslashes($myusername);
+	$mypassword= stripslashes($mypassword);
 	
-	//$myusername= stripslashes($myusername);
-	//$mypassword= stripslashes($mypassword);
-	
-	//$myusername= mysql_real_escape_string($myusername);
-	//$mypassword= mysql_real_escape_string($mypassword);
+	$myusername= mysql_real_escape_string($myusername);
+	$mypassword= mysql_real_escape_string($mypassword);
 	
 	$sql="SELECT * FROM $tbl_name WHERE username='$myusername'";
 	$result=mysql_query($sql);
