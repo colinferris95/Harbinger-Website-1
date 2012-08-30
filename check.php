@@ -27,8 +27,14 @@
 		session_start();
 		$_SESSION["myusername"] = $myusername;
 		$_SESSION["mypassword"] = $mypassword;
+		// Other variables that you might want to have set to the session would go in here,
+		// just as the two above
 		header("location:index.php");
 	} else {
-		echo "Wrong Username or Password";
+		echo "<script language=javascript>
+				alert('Please enter a valid username.');
+				window.location = '/~alex/Harbinger2/';
+			</script>";
+		
 	}
 ?>
