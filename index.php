@@ -203,6 +203,13 @@
 				
 			</div><!-- end "row" -->
 			
+			<div class="row">
+				<div class="offset8 span4">
+					<a class="twitter-timeline" href="https://twitter.com/HFHarbingerNews" data-widget-id="243428088728391680">Tweets by @HFHarbingerNews</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+			
 		</div><!-- end "container" -->
 		
 		<div id="footer_spacer"></div>
